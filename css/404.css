@@ -1,0 +1,28 @@
+.contenido {
+    text-align: center;
+    margin: 80px auto;
+    padding: 50px 30px;
+}
+
+.contenido h1 {
+    font-size: 60px;
+}
+
+.contenido h2 {
+    text-decoration: none;
+}
+
+.contenido a {
+    display: inline-block;
+    background-color: #D4A72C;
+    color: #151515;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contenido a:hover {
+    background-color: #F0E6C8;
+}

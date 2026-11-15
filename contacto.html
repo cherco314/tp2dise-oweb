@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Breaking Bad - Contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <header>
@@ -23,5 +25,30 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="contenido">
+            <h1>Contacto</h1>
+
+            <p>¿Tenés alguna consulta sobre Breaking Bad? Dejanos tu mensaje.</p>
+
+            <form action="confirmacion.html" method="get">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+        </section>
+    </main> 
 </body>
 </html>

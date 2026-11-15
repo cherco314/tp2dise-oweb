@@ -1,0 +1,55 @@
+.personajes {
+    max-width: 1500px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 1000px) {
+    .personajes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .personajes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tarjetaspersonajes {
+    background-color: #263A2D;
+    padding: 25px;
+    text-align: center;
+}
+
+.tarjetaspersonajes img {
+    width: 200px;
+    height: auto;
+}
+
+.tarjetaspersonajes h2 {
+    color: #D4A72C;
+    margin: 15px 0;
+}
+
+.tarjetaspersonajes p {
+    line-height: 1.6;
+}
+
+.tarjetaspersonajes img {
+    transition: transform 0.3s ease;
+}
+
+.tarjetaspersonajes img:hover {
+    transform: scale(1.05);
+}
+
+.tarjetaspersonajes {
+    transition: transform 0.3s ease;
+}
+
+.tarjetaspersonajes:hover {
+    transform: translateY(-5px);
+}

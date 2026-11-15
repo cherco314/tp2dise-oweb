@@ -1,0 +1,39 @@
+.temporadas {
+    max-width: 1500px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.temporada {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #263A2D;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.temporada img {
+    width: 300px;
+    height: auto;
+}
+
+.temporada h3 {
+    color: #D4A72C;
+}
+
+.temporada img {
+    transition: transform 0.3s ease;
+}
+
+.temporada img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .temporadas {
+        grid-template-columns: 1fr;
+    }
+}
